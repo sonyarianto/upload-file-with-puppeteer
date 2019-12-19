@@ -35,7 +35,7 @@ const puppeteer = require('puppeteer');
 
 	// wait for selector that contains the uploaded file URL
 	await page.waitForSelector('#upload-link');
-	await page.waitFor(2000);
+	await page.waitFor(5000);
 
 	// get the download URL
 	let downloadUrl = await page.evaluate(() => {
